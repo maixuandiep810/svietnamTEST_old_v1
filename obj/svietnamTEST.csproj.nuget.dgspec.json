@@ -4,14 +4,14 @@
     "/home/p/Desktop/svietnam/svietnamTEST/svietnamTEST.csproj": {}
   },
   "projects": {
-    "/home/p/Desktop/svietnam/svietnamTEST/svietnamTEST.csproj": {
+    "/home/p/Desktop/svietnam/svietnamAPI/svietnamAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/p/Desktop/svietnam/svietnamTEST/svietnamTEST.csproj",
-        "projectName": "svietnamTEST",
-        "projectPath": "/home/p/Desktop/svietnam/svietnamTEST/svietnamTEST.csproj",
+        "projectUniqueName": "/home/p/Desktop/svietnam/svietnamAPI/svietnamAPI.csproj",
+        "projectName": "svietnamAPI",
+        "projectPath": "/home/p/Desktop/svietnam/svietnamAPI/svietnamAPI.csproj",
         "packagesPath": "/home/p/.nuget/packages/",
-        "outputPath": "/home/p/Desktop/svietnam/svietnamTEST/obj/",
+        "outputPath": "/home/p/Desktop/svietnam/svietnamAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/p/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,87 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Data.Sqlclient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.13.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/p/Desktop/svietnam/svietnamTEST/svietnamTEST.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/p/Desktop/svietnam/svietnamTEST/svietnamTEST.csproj",
+        "projectName": "svietnamTEST",
+        "projectPath": "/home/p/Desktop/svietnam/svietnamTEST/svietnamTEST.csproj",
+        "packagesPath": "/home/p/.nuget/packages/",
+        "outputPath": "/home/p/Desktop/svietnam/svietnamTEST/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/p/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/p/Desktop/svietnam/svietnamAPI/svietnamAPI.csproj": {
+                "projectPath": "/home/p/Desktop/svietnam/svietnamAPI/svietnamAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
@@ -45,6 +126,10 @@
             "Moq": {
               "target": "Package",
               "version": "[4.16.1, )"
+            },
+            "System.Data.Sqlclient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
